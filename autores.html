@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Autores</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Gestión de Autores</h1>
+
+    <!-- Formulario para Crear o Actualizar Autor -->
+    <h2>Crear/Actualizar Autor</h2>
+    <form id="formAutor">
+        <input type="hidden" id="autorId">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required><br><br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" required><br><br>
+        <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+        <input type="date" id="fechaNacimiento" required><br><br>
+        <button type="submit" id="guardarAutor">Guardar Autor</button>
+    </form>
+
+    <hr>
+
+    <!-- Lista de Autores -->
+    <h2>Lista de Autores</h2>
+    <ul id="listaAutores"></ul>
+
+    <script src="autores.js"></script>
+</body>
+</html>
